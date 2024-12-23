@@ -1,6 +1,6 @@
 function ProjectCard({ title, description, img, url, year }) {
     return (
-      <article className="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm m-5">
+      <article className="overflow-hidden rounded-lg border border-gray-100 bg-white dark:bg-gray-800 dark:border-gray-800 shadow-sm m-5 hover:scale-110 transition-all duration-500 cursor-pointer  hover:shadow-indigo-700 dark:hover:shadow-indigo-500 shadow-3xl">
         <img
           alt=""
           src={img}
@@ -22,7 +22,7 @@ function ProjectCard({ title, description, img, url, year }) {
             {description}
           </p>
       
-          <a href={url} target="_blank" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-indigo-700">
+          <a href={url} target="_blank" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-indigo-700 dark:text-indigo-400">
             En savoir plus
       
             <span aria-hidden="true" className="block transition-all group-hover:ms-0.5 rtl:rotate-180">

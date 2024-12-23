@@ -1,6 +1,7 @@
 const {nextui} = require('@nextui-org/theme');
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ['class', '[data-theme="dark"]'],
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,6 +11,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    boxShadow: {
+      '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+    },
   },
   plugins: [nextui()],
 }

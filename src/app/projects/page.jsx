@@ -13,6 +13,7 @@ export default function Home() {
 
   return (
     <>
+    
       <section className="">
         <div className="mx-auto max-w-screen-xl px-4 py-48 lg:flex lg:h-auto lg:items-center">
           <div className="mx-auto max-w-xl text-center">
