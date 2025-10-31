@@ -1,6 +1,6 @@
 function CVDownloader() {
     return (
-    <div className="text-center mt-20">
+    <div className="text-center mt-20 mb-20">
         <h2 className="x font-extrabold text-gray-900 dark:text-gray-100 sm:text-5xl">Téléchargez mon CV</h2>
 
         <p className="mx-auto mt-4 max-w-sm text-gray-500">Vous pouvez télécharger mon CV en cliquant sur le bouton ci-dessous.</p>

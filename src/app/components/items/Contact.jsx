@@ -10,6 +10,12 @@ export default function Page() {
  
     // Handle response if necessary
     const data = await response.json()
+    if (response.ok) {
+      console.log('Email sent')
+      alert('Votre message a bien été envoyé !')
+    } else {
+      console.error('Error sending email:', data.error)
+    }
     // ...
   }
   return (

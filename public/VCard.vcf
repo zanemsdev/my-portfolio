@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Rémy CHEVALIER
+N:CHEVALIER;Rémy;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:contact@remy-chevalier.fr
+TEL;TYPE=WORK:07 86 68 13 00
+TITLE:Développeur
+item1.URL:https\://remy-chevalier.fr
+item1.X-ABLabel:PROFILE
+PHOTO:https://lh3.googleusercontent.com/contacts/AG6tpzElN-OKAEX4md_ePC6wlz
+ sgmrCQkUBnxdqQP-WGIKlqCyNt6kFx
+CATEGORIES:myContacts
+END:VCARD

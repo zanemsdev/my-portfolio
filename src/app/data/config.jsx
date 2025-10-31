@@ -21,7 +21,7 @@ export const metaData = {
     name: "Rémy Chevalier",
     role: "Développeur",
     location: "France",
-    age: "17",
+    age: "18",
   };
 
   
