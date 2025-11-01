@@ -16,7 +16,8 @@ export default function Home() {
 
   const tags = useMemo(() => {
     const unique = Array.from(new Set(projects.flatMap((p) => p.tags)));
-    return ["Tous", ...unique];
+    const sorted = unique.sort((a, b) => a.localeCompare(b));
+    return ["Tous", ...sorted];
   }, []);
 
   const filteredProjects =

@@ -57,7 +57,6 @@ export function PopupArticle({
           </DialogHeader>
 
           <div className="grid gap-4">
-            {/* Bannière principale retirée */}
 
             <div className="space-y-4">
               <p className="text-sm leading-relaxed text-gray-700 dark:text-gray-300">{description}</p>
@@ -65,7 +64,6 @@ export function PopupArticle({
                 <p className="text-sm leading-relaxed text-gray-600 dark:text-gray-400">{text}</p>
               ) : null}
 
-              {/* Textes additionnels */}
               {extraTexts && extraTexts.length > 0 && (
                 <div className="space-y-3">
                   {extraTexts.map((et, idx) => (
@@ -74,7 +72,6 @@ export function PopupArticle({
                 </div>
               )}
 
-              {/* Images additionnelles */}
               {images && images.length > 0 && (
                 <div className="my-4 flex flex-wrap justify-center items-center gap-4">
                   {images.map((src, idx) => (

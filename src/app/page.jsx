@@ -86,10 +86,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <br />
-      <Divider />
-      <br />
-      <PopupArticle />
       <br/>
       <Divider />
       <br />
