@@ -9,6 +9,7 @@ import CVDownloader from "../app/components/items/CVDownloader";
 import { Link } from "@nextui-org/link";
 import Stats from "../app/components/items/Stats";
 import Contact from "../app/components/items/Contact";
+import { PopupArticle } from "./components/dialog/PopupArticle";
 
 export default function Home() {
   const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
@@ -86,6 +87,9 @@ export default function Home() {
         </div>
       </div>
       <br />
+      <Divider />
+      <br />
+      <PopupArticle />
       <br/>
       <Divider />
       <br />

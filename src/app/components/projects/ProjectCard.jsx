@@ -1,4 +1,6 @@
-function ProjectCard({ title, description, img, url, year, tags, tag }) {
+import PopupArticle from "../dialog/PopupArticle"
+
+function ProjectCard({ title, description, img, url, year, tags, tag, text, images, extraTexts }) {
     const tagsList = Array.isArray(tags) ? tags : tag ? [tag] : [];
 
     return (
@@ -9,7 +11,7 @@ function ProjectCard({ title, description, img, url, year, tags, tag }) {
           className="h-56 w-full object-cover"
         />
       
-        <div className="p-4 sm:p-6">
+        <div className="mt-3 p-4 sm:p-6">
           <a href={url} target="_blank" rel="noopener noreferrer">
             <h3 className="text-lg font-medium text-gray-900">
               {title}
@@ -35,13 +37,25 @@ function ProjectCard({ title, description, img, url, year, tags, tag }) {
             {description}
           </p>
       
-          <a href={url} target="_blank" rel="noopener noreferrer" className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-indigo-700 dark:text-indigo-400">
-            En savoir plus
-      
-            <span aria-hidden="true" className="block transition-all group-hover:ms-0.5 rtl:rotate-180">
-              &rarr;
-            </span>
-          </a>
+          {/* Replace plain link with PopupArticle trigger */}
+          <PopupArticle
+            title={title}
+            description={description}
+            text={text}
+            img={img}
+            url={url}
+            year={year}
+            tags={tagsList}
+            images={images}
+            extraTexts={extraTexts}
+          >
+            <button className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-indigo-700 dark:text-indigo-400">
+              En savoir plus
+              <span aria-hidden="true" className="block transition-all group-hover:ms-0.5 rtl:rotate-180">
+                &rarr;
+              </span>
+            </button>
+          </PopupArticle>
         </div>
       </article>
     )
