@@ -15,14 +15,14 @@ export default function Home() {
   const [activeTag, setActiveTag] = useState("Tous");
 
   const tags = useMemo(() => {
-    const unique = Array.from(new Set(projects.map((p) => p.tag)));
+    const unique = Array.from(new Set(projects.flatMap((p) => p.tags)));
     return ["Tous", ...unique];
   }, []);
 
   const filteredProjects =
     activeTag === "Tous"
       ? sortedProjects
-      : sortedProjects.filter((p) => p.tag === activeTag);
+      : sortedProjects.filter((p) => p.tags.includes(activeTag));
 
   return (
     <>
