@@ -3,7 +3,7 @@ export const projects = [
 
     {
       title: "Nelo Project - Application Association",
-      img: "#",
+      img: "https://i.ibb.co/xKRQKfP9/SL-070720-32260-27.jpg",
       year: "En cours de Réalisation",
       tags: ["Développement", "Application"],
       description:
@@ -13,7 +13,7 @@ export const projects = [
 
     {
       title: "CRM-Stage",
-      img: "#",
+      img: "https://i.ibb.co/xKRQKfP9/SL-070720-32260-27.jpg",
       year: "En cours de Réalisation",
       tags: ["Développement", "Application"],
       description:
@@ -23,7 +23,7 @@ export const projects = [
 
     {
       title: "Dimne Bot",
-      img: "#",
+      img: "https://i.ibb.co/xKRQKfP9/SL-070720-32260-27.jpg",
       year: "En cours de Réalisation",
       tags: ["Développement"],
       description:
