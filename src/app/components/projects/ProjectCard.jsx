@@ -1,4 +1,4 @@
-function ProjectCard({ title, description, img, url, year }) {
+function ProjectCard({ title, description, img, url, year, tag }) {
     return (
       <article className="overflow-hidden rounded-lg border border-gray-100 bg-white dark:bg-gray-800 dark:border-gray-800 shadow-sm m-5 hover:scale-110 transition-all duration-500 cursor-pointer  hover:shadow-indigo-700 dark:hover:shadow-indigo-500 shadow-3xl">
         <img
@@ -15,7 +15,7 @@ function ProjectCard({ title, description, img, url, year }) {
           </a>
 
           <p className="mt-2 text-sm text-gray-800">
-            {year}
+            {year} - {tag}
           </p>
 
           <p className="mt-2 line-clamp-3 text-sm/relaxed text-gray-500">

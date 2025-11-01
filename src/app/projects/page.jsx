@@ -2,6 +2,7 @@
 import { usePathname } from "next/navigation";
 import ProjectCardList from "../components/projects/ProjectCardList";
 import { projects } from "../data/projects";
+import { useState, useMemo } from "react";
 import Link from "next/link";
 
 export default function Home() {
@@ -10,6 +11,18 @@ export default function Home() {
   const pageName = capitalize(pathname.split("/").pop() || "");
 
   const sortedProjects = [...projects].sort((a, b) => b.year - a.year);
+
+  const [activeTag, setActiveTag] = useState("Tous");
+
+  const tags = useMemo(() => {
+    const unique = Array.from(new Set(projects.map((p) => p.tag)));
+    return ["Tous", ...unique];
+  }, []);
+
+  const filteredProjects =
+    activeTag === "Tous"
+      ? sortedProjects
+      : sortedProjects.filter((p) => p.tag === activeTag);
 
   return (
     <>
@@ -40,8 +53,30 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="mx-auto max-w-screen-xl px-4 py-6">
+        <div className="flex flex-wrap items-center gap-3 justify-center">
+          {tags.map((tag) => {
+            const active = tag === activeTag;
+            return (
+              <button
+                key={tag}
+                onClick={() => setActiveTag(tag)}
+                className={`px-3 py-1.5 rounded-full text-sm font-medium transition ${
+                  active
+                    ? "bg-indigo-600 text-white shadow"
+                    : "bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-600"
+                }`}
+              >
+                {tag}
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects">
-        <ProjectCardList projects={sortedProjects} />
+        <ProjectCardList projects={filteredProjects} />
       </div>
     </>
   );

@@ -6,6 +6,7 @@ function ProjectCardList({ projects }) {
       <ProjectCard
         title={project.title}
         year={project.year}
+        tag={project.tag}
         description={project.description}
         img={project.img}
         url={project.url}
