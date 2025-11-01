@@ -10,12 +10,8 @@ export const projects = [
         "Dans le cadre de mon intérêt pour l’organisation et la gestion communautaire, j’ai développé une application destinée aux associations afin de simplifier leur communication interne et la gestion de leurs membres. Je me suis concentré sur la création d’un outil complet permettant d’administrer un club, d’organiser des tournois, de planifier des évènements et de centraliser toutes les informations importantes. Mon objectif était de proposer une interface intuitive qui facilite le travail des responsables tout en améliorant l’expérience des adhérents. À travers ce projet, j’ai conçu un espace de gestion clair, où il est possible de suivre les inscriptions, diffuser des annonces, gérer des équipes et même coordonner la logistique des évènements. J’ai voulu mettre l’accent sur la simplicité d’utilisation, afin que n’importe quel membre d’une association puisse rapidement prendre en main l’outil. Ce projet m’a permis d’approfondir mes compétences en développement d’applications et en conception d’outils collaboratifs, tout en répondant à un besoin réel que rencontrent de nombreuses structures associatives qui souhaitent se moderniser.",
       url: "https://github.com/zanemsdev/nelo-project",
       images: [
-        // Ajoutez ici des URLs d'images supplémentaires si besoin
-        // "https://exemple.com/image1.jpg",
       ],
       extraTexts: [
-        // Ajoutez ici des textes supplémentaires si besoin
-        // "Texte additionnel 1",
       ],
     },
 
