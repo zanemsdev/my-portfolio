@@ -63,7 +63,7 @@ export default function Home() {
           <div className="relative w-64 h-80 overflow-hidden rounded-t-full bg-black">
             <a href={socialLinks.linkedin} target="_blank">
               <Image
-                src="/Profile.JPG"
+                src="/Profile.jpg"
                 alt="Portrait de Rémy"
                 fill
                 className="object-cover"
