@@ -7,9 +7,9 @@ import { information, socialLinks } from "../app/data/config";
 import { Divider } from "@nextui-org/divider";
 import CVDownloader from "../app/components/items/CVDownloader";
 import { Link } from "@nextui-org/link";
-import Stats from "../app/components/items/Stats";
 import Contact from "../app/components/items/Contact";
 import { PopupArticle } from "./components/dialog/PopupArticle";
+import Stats from "../app/components/items/Stats";
 
 export default function Home() {
   const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
@@ -58,7 +58,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Right Column - Image */}
+        {/* Colonne de droite - Image */}
         <div className="w-full md:w-1/3 flex justify-center ">
           <div className="relative w-64 h-80 overflow-hidden rounded-t-full bg-black">
             <a href={socialLinks.linkedin} target="_blank">
@@ -87,6 +87,19 @@ export default function Home() {
         </div>
       </div>
       <br/>
+      <Divider /> 
+      <br />
+      <Stats
+        title="Quelques statistiques"
+        description="Voici quelques chiffres clés qui illustrent mon parcours et mes réalisations dans le domaine du design et développement."
+        stats={[
+          { name: "Projets Réalisés", value: projects.length },
+          { name: "Technologies Maîtrisées", value: "10+" },
+          { name: "Heures de Code", value: "200+" },
+          { name: "Heure d'Apprentissage", value: "1500+" },
+        ]}
+      />
+      <br />
       <Divider />
       <br />
       <Contact />

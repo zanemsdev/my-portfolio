@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import NavBar from "./components/navbar/Navbar";
 import Annoucement from "./components/items/Annoucement";
 import Providers from "./components/darkmod/Provider";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata = {
   title: metaData.title,
@@ -15,6 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning>
+      <GoogleTagManager gtmId="GTM-5N63RKZG" />
       <body>
       <Providers>
       <Annoucement />

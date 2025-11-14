@@ -29,6 +29,7 @@ function Nav() {
                 <DropdownMenu aria-label="Static Actions">
                     <DropdownItem><Link href="/"> Home </Link></DropdownItem>
                     <DropdownItem><Link href="/projects"> Projects </Link></DropdownItem>
+                    <DropdownItem><Link href="/aboutme"> About Me </Link></DropdownItem>
                     <DropdownItem><Link href="/contact"> Contact </Link></DropdownItem>
                 </DropdownMenu>
             </Dropdown>
@@ -47,6 +48,7 @@ function Nav() {
                         
                         <Link href="/" className={pathname == "/" ? "hidden" : "shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-indigo-700 hover:text-indigo-700 dark:text-white dark:hover:text-indigo-400 dark:hover:border-indigo-400"}> Home </Link>
                         <Link href="/projects" className={pathname == "/projects" ? "hidden" : "shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-indigo-700 hover:text-indigo-700 dark:text-white dark:hover:text-indigo-400 dark:hover:border-indigo-400"}> Projects </Link>
+                        <Link href="/aboutme" className={pathname == "/aboutme" ? "hidden" : "shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-indigo-700 hover:text-indigo-700 dark:text-white dark:hover:text-indigo-400 dark:hover:border-indigo-400"}> About Me </Link>
                         <Link href="/sterndev" className={pathname == "/sterndev" ? "hidden" : "shrink-0 border-b-2 border-transparent px-1 pb-4 text-sm font-medium text-gray-500 hover:border-indigo-700 hover:text-indigo-700 dark:text-white dark:hover:text-indigo-400 dark:hover:border-indigo-400"} aria-current="page"> SterNdev </Link>
                     </nav>
                     
