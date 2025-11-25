@@ -5,6 +5,16 @@ import { projects } from "../data/projects";
 import { useState, useMemo } from "react";
 import Link from "next/link";
 
+import { metaData } from "../data/config";
+
+export const metadata = {
+  title: metaData.titleProjects,
+  description: metaData.description,
+  keywords: metaData.keywords,
+  robots: metaData.robots,
+} 
+
+
 export default function Home() {
   const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
   const pathname = usePathname();

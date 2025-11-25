@@ -1,7 +1,10 @@
 export const metaData = {
     title: 'Portfolio de Développeur Front-End & Backend - Rémy CHEVALIER',
+    titleProjects: 'Projets Personnels et Professionnels - Rémy CHEVALIER',
+    titleAbout: 'À Propos de Moi - Rémy CHEVALIER',
+    titleSterNdev: 'SterNdev - Communauté de passionner d\'informatique',
     description: 'Portfolio de Rémy CHEVALIER - Développeur passionné par le web et les technologies modernes. Découvrez mes projets, compétences en programmation et collaborations. Créons ensemble des solutions innovantes !',
-    keywords: 'Portfolio, Rémy CHEVALIER, Rémy Chevalier, Remy, CV,  Développement, Développeur, Dev, NextJS, Web, JavaScript, ReactJS, Projets, Compétences, Programmation, Collaborations, Solutions, Innovantes, Passion, Technologies, Modernes',
+    keywords: 'Portfolio, Rémy CHEVALIER, Rémy Chevalier, Remy, CV,  Développement, Développeur, Dev, NextJS, Web, JavaScript, ReactJS, Projets, Compétences, Programmation, Collaborations, Solutions, Innovantes, Passion, Technologies, Modernes, Design, Frontend, Backend',
     robots: 'index, follow',
     author: 'Rémy CHEVALIER',
     language: 'French',

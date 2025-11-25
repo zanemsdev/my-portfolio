@@ -3,6 +3,14 @@ import Stats from "../components/items/Stats";
 import { Divider } from "@nextui-org/divider";
 import { projects } from "../data/projects";
 import { information } from "../data/config";
+import { metaData } from "../data/config";
+
+export const metadata = {
+  title: metaData.titleAbout,
+  description: metaData.description,
+  keywords: metaData.keywords,
+  robots: metaData.robots,
+} 
 
 export default function Home() {
     return (

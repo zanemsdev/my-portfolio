@@ -5,13 +5,13 @@ import NavBar from "./components/navbar/Navbar";
 import Annoucement from "./components/items/Annoucement";
 import Providers from "./components/darkmod/Provider";
 import { GoogleTagManager } from '@next/third-parties/google'
-
+ 
 export const metadata = {
   title: metaData.title,
   description: metaData.description,
   keywords: metaData.keywords,
   robots: metaData.robots,
-}
+} 
 
 export default function RootLayout({ children }) {
   return (
