@@ -1,5 +1,5 @@
 export const metaData = {
-    title: 'Portfolio - Rémy CHEVALIER',
+    title: 'Portfolio de Développeur Front-End & Backend - Rémy CHEVALIER',
     description: 'Portfolio de Rémy CHEVALIER - Développeur passionné par le web et les technologies modernes. Découvrez mes projets, compétences en programmation et collaborations. Créons ensemble des solutions innovantes !',
     keywords: 'Portfolio, Rémy CHEVALIER, Rémy Chevalier, Remy, CV,  Développement, Développeur, Dev, NextJS, Web, JavaScript, ReactJS, Projets, Compétences, Programmation, Collaborations, Solutions, Innovantes, Passion, Technologies, Modernes',
     robots: 'index, follow',
