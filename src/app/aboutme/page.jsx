@@ -2,12 +2,7 @@ import History from "../components/items/History";
 import Stats from "../components/items/Stats";
 import { Divider } from "@nextui-org/divider";
 import { projects } from "../data/projects";
-import { information, metaData } from "../data/config";
-import { metadata } from "./metadata";
-
-export const metadata = {
-  ...metadataBase,
-};
+import { information } from "../data/config";
 
 export default function Home() {
     return (

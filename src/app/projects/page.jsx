@@ -4,12 +4,11 @@ import ProjectCardList from "../components/projects/ProjectCardList";
 import { projects } from "../data/projects";
 import { useState, useMemo } from "react";
 import Link from "next/link";
-import { metadata } from "./metadata";
+import { metadataBase } from "./metadata";
 
 export const metadata = {
   ...metadataBase,
 };
-
 
 export default function Home() {
   const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);

@@ -4,13 +4,12 @@ import NavBar from "./components/navbar/Navbar";
 import Annoucement from "./components/items/Annoucement";
 import Providers from "./components/darkmod/Provider";
 import { GoogleTagManager } from '@next/third-parties/google'
-import { metadata } from "./metadata";
+ 
+import { metadataBase } from "./metadata";
 
 export const metadata = {
   ...metadataBase,
 };
-
- 
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" suppressHydrationWarning>
