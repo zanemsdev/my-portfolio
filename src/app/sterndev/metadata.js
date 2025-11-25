@@ -1,6 +1,6 @@
 import { metaData } from "../data/config";
 
-export const metadata = {
+export const metadataBase = {
   title: metaData.titleSterndev,
   description: metaData.description,
   keywords: metaData.keywords,

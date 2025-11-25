@@ -11,6 +11,7 @@ import Contact from "../app/components/items/Contact";
 import { PopupArticle } from "./components/dialog/PopupArticle";
 import Stats from "../app/components/items/Stats";
 
+
 export default function Home() {
   const capitalize = (s) => s.charAt(0).toUpperCase() + s.slice(1);
   const pathname = usePathname();
